@@ -1,19 +1,21 @@
 <template>
   <main-layout>
-    <div>
-       <div :is="item.component" :head="item.headText" :body="item.bodyText" :imgUrl="item.imgUrl" :href="item.href"  v-for="item in items"></div>
+    <div class="container">
+      <ul>
+        <li :is="item.component" :head="item.headText" :body="item.bodyText" :imgUrl="item.imgUrl"  v-for="item in items"></li>
+      </ul>
     </div>
-</div>
   </main-layout>
 </template>
 
 <script>
   import MainLayout from '../layouts/Main.vue'
-  import activeInfoCard from '../components/activeInfoCard.vue'
+  import TitleCard from '../components/titleCard.vue'
+
   export default {
   components: {
   MainLayout,
-  'activeInfoCard':activeInfoCard,
+  'TitleCard':TitleCard,
   },
   data() {
   return {
@@ -22,19 +24,19 @@
   },
   mounted()
   {
-  for(var i = 0; i < 10; i++)
+    for(var i = 0; i < 10; i++)
       {
        console.log('-----');
        this.items.push({
-        'component': 'activeInfoCard',
+        'component': 'TitleCard',
         'headText': 'Head',
         'bodyText': 'Body',
-        'imgUrl': 'img/pic2.jpg',
-        'href': '#'
+        'imgUrl': 'img/media1.jpg'
       });
        console.log(this.items);
       
       }
     }
   }
+
 </script>

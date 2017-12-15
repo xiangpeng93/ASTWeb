@@ -42,10 +42,10 @@
 
 <div class="row" style="padding-top:10px;margin-left:0px;margin-right:0px;padding:0px;" >
   <div class="col-xs-12 col-sm-12 col-md-6" style="padding:2px;">
-	<a class="img-responsive center-block img-rounded" style="background-image: url(http://127.0.0.1:8080/img/pic1.jpg); background-size: cover; background-position: center; height:400px"></a>
+	<a class="img-responsive center-block img-rounded" style="background-image: url(img/pic1.jpg); background-size: cover; background-position: center; height:400px"></a>
 	</div>
   <div class="col-xs-12 col-sm-12 col-md-6" style="padding:2px;"> 
-	  <a class="img-responsive center-block img-rounded" style="background-image: url(http://127.0.0.1:8080/img/pic2.jpg); background-size: cover; background-position: center; height: 400px"></a>
+	  <a class="img-responsive center-block img-rounded" style="background-image: url(img/pic2.jpg); background-size: cover; background-position: center; height: 400px"></a>
 	</div>
 </div>
 	

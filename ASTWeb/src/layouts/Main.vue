@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="mainDiv">
   <nav name="nav" class="nav navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 		<div class="navbar-header">
@@ -9,22 +9,24 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
-		  <a class="navbar-brand" style="padding-left:30px;padding-right:30px;" href="#">
+		  <a class="navbar-brand" style="padding-left:30px;padding-right:30px;" href="/">
 		  <b class="big">AST Space</b><span class="small"> For Maker</span>
 		  </a>
 		</div>
 
 		<div class="collapse navbar-collapse" id="targetNav">
 		  <ul class="nav navbar-nav">
-			<li><v-link href="/"> 近期活动 <span class="sr-only">(current)</span></v-link></li>
-			<li><v-link href="/about"> 历史活动 </v-link></li>
-			
-		  </ul>
+			<v-link href="/">主页 <span class="sr-only">(current)</span></v-link>
+        <v-link href="/add_active_page">活动添加</v-link>
+        <v-link href="/manger_active_page">活动管理</v-link>
+        <v-link href="/show_active_page">活动展示</v-link>
+        <v-link href="/about">关于我们</v-link>
+      </ul>
 		  
 		  <ul class="nav navbar-nav navbar-right">
-			<li><v-link href="#">登录</v-link></li>
+			<v-link href="/login_page">登录</v-link>
 			<li role="separator" class="divider"></li>
-			<li><v-link href="#">注册</v-link></li>
+			<v-link href="/register_page">注册</v-link>
 			
 		  </ul>
 		</div><!-- /.navbar-collapse -->
@@ -36,7 +38,7 @@
 	</div>
 	
 <div class="container-fluid footer" style="z-index:10;">
-<div class="row" style="margin-top: 20px; margin-bottom: 0px;background-color: #000000;padding-top:10px;">
+<div class="row" style="margin-bottom: 0px;background-color: #000000;padding-top:10px;">
 <div class="col-sm-4 col-sm-offset-1" style="padding-bottom: 20px">
 <h4 style="color: #fff">AST Space</h4><p style="color: #fff">来自未来的创客学习模式</p><div style="margin-top: 40px; color: #fff"><a href="/about">关于我们</a>                        |<a href="/join_us">加入我们</a></div><div style="margin-top: 10px"><p style="color: #ccc">反馈与建议：<a href="mailto:astspace@space.com">astspace@space.com</a></p></div></div><div class="col-sm-3" style="padding-bottom: 20px"><h4 style="color: #fff">合作伙伴</h4><p><br></p><div style="margin-top: 40px; color: #fff"><p><a href="http://www.thumaker.cn">浙江省科技馆</a></p><p><a href="https://ke.youdao.com/">浙江省科协国际部</a></p></div></div><div class="col-sm-3" style="padding-bottom: 20px">
 
@@ -49,8 +51,8 @@
 <script>
   import VLink from '../components/VLink.vue'
   export default {
-    components: {
-      VLink
-    }
+  components: {
+  VLink
+  }
   }
 </script>

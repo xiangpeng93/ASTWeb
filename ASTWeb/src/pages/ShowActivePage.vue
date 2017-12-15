@@ -29,11 +29,10 @@
         'component': 'activeInfoCard',
         'headText': 'Head',
         'bodyText': 'Body',
-        'imgUrl': 'img/pic2.jpg',
+        'imgUrl': 'img/pic1.jpg',
         'href': '#'
       });
        console.log(this.items);
-      
       }
     }
   }
