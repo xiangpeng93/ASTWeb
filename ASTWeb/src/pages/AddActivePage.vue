@@ -27,7 +27,8 @@
 
 	</div>
 	<hr>
-	<div id="editDivHead">
+	<div class="container">
+	<div id="editDivHead" >
 	</div>
 	<div name="active_body" id="editDivBody" style="height:500px;margin:5px;">
 		
@@ -37,15 +38,16 @@
 	<div class="text-right">
 	<button class="btn btn-primary " style="margin:5px;" @click="AddActiveInfo()">保存并发布信息</button>
 	</div>	
+	</div>
 </main-layout>
 </template>
 
 <style scoped>
-  @import '../../wang/wangEditor.css';
+  @import '../../wang/wangEditor.min.css';
 </style>
 
 <script>
-  import wangEdit from '../../wang/wangEditor.js';
+  import wangEdit from '../../wang/wangEditor.min.js';
   import MainLayout from '../layouts/Main.vue';
   
   var editor2 = new wangEdit('#editDivHead','#editDivBody');
