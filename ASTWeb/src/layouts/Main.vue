@@ -1,4 +1,5 @@
 <template>
+<body>
   <div id="mainDiv">
   <nav name="nav" class="nav navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
@@ -33,7 +34,7 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 	
-<div style="padding-top:50px;height:80%;">
+<div style="padding-top:50px;height:80%;width:100%">
 		<slot></slot>
 	</div>
 	
@@ -45,6 +46,7 @@
 <div class="text-center"><img src="https://makerbean.oss-cn-beijing.aliyuncs.com/img/base/weixin_qrcode.jpg"><p style="margin-top: 10px; color: #ccc">扫一扫关注ASTSpace微信公众号</p></div></div></div><div class="row text-center" style="padding:10px; background-color: #2e2e2e; color: #ccc">@2017 AST创客空间杭ICP备XXXXXXXX号</div></div>
 
   </div>
+</body>
 </template>
 
 
